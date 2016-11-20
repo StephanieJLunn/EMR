@@ -1,0 +1,90 @@
+!!! 5
+html(lang='en')
+  head
+    meta(charset='utf-8')
+    title Doctor_Administration
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    meta(name='description', content='')
+    meta(name='author', content='')
+    link(href='/css/bootstrap.css', rel='stylesheet')
+    style(type='text/css')
+      body {
+      padding-top: 60px;
+      padding-bottom: 40px;
+      }
+      .sidebar-nav {
+      padding: 9px 0;
+      }
+    link(href='/css/bootstrap-responsive.css', rel='stylesheet')
+    link(rel='apple-touch-icon-precomposed', sizes='144x144', href='/ico/apple-touch-icon-144-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='114x114', href='/ico/apple-touch-icon-114-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', sizes='72x72', href='/ico/apple-touch-icon-72-precomposed.png')
+    link(rel='apple-touch-icon-precomposed', href='/ico/apple-touch-icon-57-precomposed.png')
+    link(rel='shortcut icon', href='/ico/favicon.png')
+  body
+    .navbar.navbar-inverse.navbar-fixed-top
+      .navbar-inner
+        .container-fluid
+          a.btn.btn-navbar(data-toggle='collapse', data-target='.nav-collapse')
+            span.icon-bar
+            span.icon-bar
+            span.icon-bar
+          a.brand(href='#') Robert Loredo Health Services
+          .nav-collapse.collapse
+            p.navbar-text.pull-right
+              | Logged in as
+              a.navbar-link(href='#') Username
+            ul.nav
+              li.active
+                a(href='/doctor') Home
+              li
+                a(href='#patient') Patient Portal 
+              li
+                a(href='/administration') Administration Portal
+              li
+                a(href='/finance') Finance 
+              li
+                a(href='/reports') Reports 
+    .container-fluid
+      .row-fluid
+        .span3
+          .well.sidebar-nav
+            ul.nav.nav-list
+              li.nav-header Most recently viewed
+              li.active
+                a(href='#') PatientName
+              li
+                a(href='#') PatientName
+              li
+                a(href='#') PatientName
+              li
+                a(href='#') PatientName
+              li
+                a(href='#') PatientName
+              li
+                a(href='#') PatientName
+              li
+                a(href='#') PatientName  
+        .span9
+          .hero-unit
+            center
+              h1 Loredo Health Services
+              h2 Administration
+          .row-fluid
+            .span4
+              h2 Delegate Access
+              p
+                | Change permissions for new/existing staff
+              p
+                a.btn.btn-primary.btn-large(href='#') Delegate Access »
+            // /span
+            .span4
+              h2 View Practice Account Information
+              p
+                | Review your Service Level Agreement with HenleyLunn Cloud Computing, View Practice Usage Metrics, View System Information (RTO/RPO)
+              p
+                a.btn.btn-primary.btn-large(href='#') Account Information » 
+      hr
+      footer
+        p © HenleyLunn Cloud Corporation 2016
+  include ../partials/scripts
