@@ -29,56 +29,28 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand(href='#') Robert Loredo Health Services
+          a.brand(href='/doctor_home') Robert Loredo Health Services
           .nav-collapse.collapse
             p.navbar-text.pull-right
               | Logged in as
               a.navbar-link(href='#') Username
             ul.nav
               li.active
-                a(href='/nurse') Home
+                a(href='/nurse_home') Home
               li
-                a(href='#patient') Patient Portal 
-
+                a(href='/nurse_patientPortal') Patient Portal 
+              li
+                a(href='/nurse_scheduling') Scheduling   
     .container-fluid
       .row-fluid
-        .span3
-          .well.sidebar-nav
-            ul.nav.nav-list
-              li.nav-header Most recently viewed
-              li.active
-                a(href='#') PatientName
-              li
-                a(href='#') PatientName
-              li
-                a(href='#') PatientName
-              li
-                a(href='#') PatientName
-              li
-                a(href='#') PatientName
-              li
-                a(href='#') PatientName
-              li
-                a(href='#') PatientName  
-        .span9
-          .hero-unit
-            center
-              h1 Loredo Health Services
-              h2 Welcome 
-          .row-fluid
-            .span4
-              h2 New Patient Record
-              p
-                | Create a record for a new patient. 
-              p
-                a.btn.btn-primary.btn-large(href='#') New Patient Record »
-            .span4
-              h2 Search for a Patient
-              p
-                | Locate the file for an existing patient to view or edit. Can add diagnostix information to an existing record.
-              p
-                a.btn.btn-primary.btn-large(href='#') Search for a Patient »
+        .span2
+          block sidebar
+        .span10
+          block content
       hr
-      footer
-        p © HenleyLunn Cloud Corporation 2016
+      .footer
+        center
+          p HenleyLunn Cloud Corporation ©2016
+          .logo
+           img(src='img/HenleyLunnLogo.png')
   include ../partials/scripts

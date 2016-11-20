@@ -1,0 +1,45 @@
+extend nurse_framework
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 Welcome 
+  .row-fluid
+    .span4
+      h2 Scheduling
+      p
+        | View the calendar, schedule an appointment, edit an existing appointment, or delete a scheduled appointment.
+      p
+        a.btn.btn-primary.btn-large(href='/nurse_scheduling') Scheduling »
+    // /span
+    .span4
+      h2 New Patient Record
+      p
+        | Create a record for a new patient. 
+      p
+        a.btn.btn-primary.btn-large(href='/nurse_newPatient') New Patient Record »
+    .span4
+      h2 Search for a Patient
+      p
+        | Locate the file for an existing patient to view or edit. Allows you to enter patient vitals as well.
+      p
+        a.btn.btn-primary.btn-large(href='/nurse_patientSearch') Search for a Patient »

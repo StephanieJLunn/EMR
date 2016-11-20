@@ -35,15 +35,19 @@ app.get('/', function(req,res) {
   res.render("default");
 });
 
-//Obtain the staff level specific page
-app.get('/doctor', function(req,res) { res.render("layouts/doctor")});
-app.get('/nurse', function(req,res) { res.render("layouts/nurse")});
-app.get('/support', function(req,res) { res.render("layouts/support")});
+//Obtain the staff level specific landing page
+app.get('/doctor_home', function(req,res) { res.render("layouts//doctor_home")});
+app.get('/nurse_home', function(req,res) { res.render("layouts/nurse_home")});
+app.get('/staff_home', function(req,res) { res.render("layouts/staff_home")});
 
 //Render the Doctor specific pages
-app.get('/finance', function(req,res) { res.render("layouts/finance")});
-app.get('/administration', function(req,res) { res.render("layouts/administration")});
-app.get('/reports', function(req,res) { res.render("layouts/reports")});
+app.get('/doctor_finance', function(req,res) { res.render("layouts/doctor_finance")});
+app.get('/doctor_administration', function(req,res) { res.render("layouts/doctor_administration")});
+app.get('/doctor_reports', function(req,res) { res.render("layouts/doctor_reports")});
+app.get('/doctor_patientPortal', function(req,res) { res.render("layouts/doctor_patientPortal")});
+app.get('/doctor_newPatient', function(req,res) { res.render("layouts/doctor_newPatient")});
+app.get('/doctor_patientSearch', function(req,res) { res.render("layouts/doctor_patientSearch")});
+app.get('/doctor_scheduling', function(req,res) { res.render("layouts/doctor_scheduling")});
 
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));

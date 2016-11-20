@@ -1,0 +1,45 @@
+extend doctor_framework
+
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+ 
+
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 New Patient
+  .row-fluid
+    p
+      | Please select the location where the patient will be seen 
+
+    .span2
+      h2 Patient in the United States
+      p
+        | Please choose this option for a patient that will be seen in the Florida practice, within the United States of America. 
+      p
+        a.btn.btn-primary.btn-large(href='#') Patient in the United States »
+    .span2
+      h2 Patient in Kenya
+      p
+        | Please choose this option for a patient that will be seen in Kenya. 
+      p
+        a.btn.btn-primary.btn-large(href='#') Patient in Africa »
+     

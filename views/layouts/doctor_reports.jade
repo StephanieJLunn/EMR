@@ -1,0 +1,34 @@
+extend doctor_framework
+
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recent reports
+      li.active
+        a(href='#') Report_Date
+      li
+        a(href='#') Report_Date
+      li
+        a(href='#') Report_Date  
+
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 Reports 
+  .row-fluid
+    .span4
+      h2 Request New Patient Report
+      p
+        | Take a look at daily, weekly, and monthly reports for a particular patient. Can view medical or financial history.
+      p
+        a.btn.btn-primary.btn-large(href='#') Get Patient Report »
+    // /span
+    .span4
+      h2 Request New Practice Report
+      p
+        |  Take a look at daily, weekly, and monthly reports for the practice. Can view quantitative patient information or practice financial history. 
+      p
+        a.btn.btn-primary.btn-large(href='#') Get Practice Report »   
+     

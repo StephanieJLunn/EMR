@@ -1,0 +1,48 @@
+extend doctor_framework
+
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 Finance
+  .row-fluid
+    .span4
+      h2 Search for a Patient
+      p
+        | Locate the file for an existing patient to view or edit or add additional billing code
+      p
+        a.btn.btn-primary.btn-large(href='#') Search for a Patient »
+    // /span
+    .span4
+      h2 View Practice Financal History
+      p
+        | Generate a report by day, week, month, quarter, or year
+      p
+        a.btn.btn-primary.btn-large(href='#') Financial History »
+    .span4
+      h2 Edit Pricing
+      p
+        | Change the amount charged for different billing codes.
+      p
+        a.btn.btn-primary.btn-large(href='#') Edit Pricing »   
+    

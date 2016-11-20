@@ -1,0 +1,48 @@
+extend doctor_framework
+
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 Scheduling
+  .row-fluid
+    .span4
+      h2 View the Calendar
+      p
+        | Look at the currrent calendar schedule.
+      p
+        a.btn.btn-primary.btn-large(href='#') Calendar»
+    .span4
+      h2 Schedule a New Appointment
+      p
+        | Choose a New Appointment
+      p
+        a.btn.btn-primary.btn-large(href='#') Schedule Appointment »
+    .span4
+      h2 Change Appointment
+      p
+        | Edit or Delte an Existing Appointment
+      p
+        a.btn.btn-primary.btn-large(href='#') Change Appointment »
+            
+    

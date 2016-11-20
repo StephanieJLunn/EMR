@@ -6166,3 +6166,8 @@ a.badge:focus {
 .affix {
   position: fixed;
 }
+
+.logo{
+  height: 100px;
+  width: 100px;
+}

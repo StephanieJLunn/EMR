@@ -2,7 +2,7 @@
 html(lang='en')
   head
     meta(charset='utf-8')
-    title Doctor_Reports
+    title Doctor
     meta(name='viewport', content='width=device-width, initial-scale=1.0')
     meta(name='description', content='')
     meta(name='author', content='')
@@ -29,54 +29,34 @@ html(lang='en')
             span.icon-bar
             span.icon-bar
             span.icon-bar
-          a.brand(href='#') Robert Loredo Health Services
+          a.brand(href='/doctor_home') Robert Loredo Health Services
           .nav-collapse.collapse
             p.navbar-text.pull-right
               | Logged in as
               a.navbar-link(href='#') Username
             ul.nav
               li.active
-                a(href='/doctor') Home
+                a(href='/doctor_home') Home
               li
-                a(href='#patient') Patient Portal 
+                a(href='/doctor_patientPortal') Patient Portal 
               li
-                a(href='/administration') Administration Portal
+                a(href='/doctor_administration') Administration Portal
               li
-                a(href='/finance') Finance 
+                a(href='/doctor_finance') Finance 
               li
-                a(href='/reports') Reports 
+                a(href='/doctor_reports') Reports 
+              li
+                a(href='/doctor_scheduling') Scheduling   
     .container-fluid
       .row-fluid
-        .span3
-          .well.sidebar-nav
-            ul.nav.nav-list
-              li.nav-header Most recent reports
-              li.active
-                a(href='#') Report_Date
-              li
-                a(href='#') Report_Date
-              li
-                a(href='#') Report_Date  
-        .span9
-          .hero-unit
-            center
-              h1 Loredo Health Services
-              h2 Reports 
-          .row-fluid
-            .span4
-              h2 Request New Patient Report
-              p
-                | Take a look at daily, weekly, and monthly reports for a particular patient. Can view medical or financial history.
-              p
-                a.btn.btn-primary.btn-large(href='#') Get Patient Report »
-            // /span
-            .span4
-              h2 Request New Practice Report
-              p
-                |  Take a look at daily, weekly, and monthly reports for the practice. Can view quantitative patient information or practice financial history. 
-              p
-                a.btn.btn-primary.btn-large(href='#') Get Practice Report »   
+        .span2
+          block sidebar
+        .span10
+          block content
       hr
-      footer
-        p © HenleyLunn Cloud Corporation 2016
+      .footer
+        center
+          p HenleyLunn Cloud Corporation ©2016
+          .logo
+           img(src='img/HenleyLunnLogo.png')
   include ../partials/scripts

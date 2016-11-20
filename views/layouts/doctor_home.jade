@@ -1,0 +1,65 @@
+extend doctor_framework
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 Welcome Doctor
+  .row-fluid
+    .span4
+      h2 Scheduling
+      p
+        | View the calendar, schedule an appointment, edit an existing appointment, or delete a scheduled appointment.
+      p
+        a.btn.btn-primary.btn-large(href='/doctor_scheduling') Scheduling »
+    // /span
+    .span4
+      h2 New Patient Record
+      p
+        | Create a record for a new patient. 
+      p
+        a.btn.btn-primary.btn-large(href='/doctor_newPatient') New Patient Record »
+    .span4
+      h2 Search for a Patient
+      p
+        | Locate the file for an existing patient to view or edit.
+      p
+        a.btn.btn-primary.btn-large(href='/doctor_patientSearch') Search for a Patient »
+  .row-fluid
+    .span4
+      h2 Finance
+      p
+        | Enter billing codes or a particular patient, revise financial charges for the practice, and/or examine patient or practice financial history.
+      p
+        a.btn.btn-primary.btn-large(href='/doctor_finance') Finance »
+    .span4
+      h2 Reports
+      p
+        | Take a look at daily, weekly, and monthly reports
+      p
+        a.btn.btn-primary.btn-large(href='/doctor_reports') Reports »
+    .span4
+      h2 Administration
+      p
+        | Delegate access for other doctors, nurses, or support staff in the office.
+      p
+        a.btn.btn-primary.btn-large(href='/doctor_administration') Administration Portal »    
+
