@@ -282,15 +282,54 @@ block content
         br       
     hr
     h2 Medical History:    
-    .row-fluid 
+    .row-fluid
+      .span4
+        form
+          p 
+            | Are you presently under care for a medical or mental health problem? 
+            br
+            input#yescare.input(type='radio', name='care', value='yes', checked='')
+            |  Yes
+            br
+            input#nocare.input(type='radio', name='care', value='no')
+            |  No
+            br
       .span4
         form(action='action_page.php')
-          | Allergies:
+          | If Yes, Describe the Problem(s) and Treatment:
           br
           br
-          textarea(name='allergies', rows='10', cols='30') List any known allergies to known medications and describe the reactions.
+          textarea#care_description.textarea(name='care_description', rows='10', cols='30') List problem(s) and treatment.
           br
-          input#save_button.btn-primary.btn-large(type='Save', value='Save Information')
+      .span4
+        form(action='action_page.php')
+          | History of Serious Illness and/or Injuries:
+          br
+          br
+          textarea#history_illness.textarea(name='history_illness', rows='10', cols='30') Include dates.
+          br
+    .row-fluid
+      .span4
+        form(action='action_page.php')
+          | Medications:
+          br
+          br
+          textarea#medications.textarea(name='medications', rows='10', cols='30') List any medications that the patient is taking.
+          br
+      .span4
+        form(action='action_page.php')
+          | Medication Allergies:
+          br
+          br
+          textarea#medicationallergies.textarea(name='medicationallergies', rows='10', cols='30') List any known allergies to known medications and describe the reactions.
+          br
+      .span4
+        form(action='action_page.php')
+          | Food and/Or Environmental Allergies:
+          br
+          br
+          textarea#foodallergies.textarea(name='foodallergies', rows='10', cols='30') List any food and/or environmental allergies and describe the reactions.
+          br     
     hr       
     .row-fluid    
       center
