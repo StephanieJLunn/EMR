@@ -1,4 +1,4 @@
-extend doctor_framework
+extend nurse_framework
 
 
 block sidebar
@@ -19,24 +19,30 @@ block sidebar
         a(href='#') PatientName
       li
         a(href='#') PatientName  
- 
 
 block content
   .hero-unit
     center
       h1 Robert Loredo Health Services
-      h2 Patient Portal
+      h2 Scheduling
   .row-fluid
     .span4
-      h2 New Patient Record
+      h2 View the Calendar
       p
-        | Create a record for a new patient. 
+        | Look at the currrent calendar schedule.
       p
-        a.btn.btn-primary.btn-large(href='/doctor_newPatient') New Patient Record »
+        a.btn.btn-primary.btn-large(href='#') Calendar»
     .span4
-      h2 Search for a Patient
+      h2 Schedule a New Appointment
       p
-        | Locate the file for an existing patient to view or edit.
+        | Choose a New Appointment
       p
-        a.btn.btn-primary.btn-large(href='/doctor_patientSearch') Search for a Patient »
-     
+        a.btn.btn-primary.btn-large(href='#') Schedule Appointment »
+    .span4
+      h2 Change Appointment
+      p
+        | Edit or Delte an Existing Appointment
+      p
+        a.btn.btn-primary.btn-large(href='#') Change Appointment »
+            
+    
