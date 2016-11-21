@@ -25,59 +25,59 @@ block content
       h1 Robert Loredo Health Services
       h2 New Patient
   .row-fluid
-    h2 Please complete the information below:
+    h2 Complete the patient's information below:
   form#contact_form(action='#', method='POST', enctype='multipart/form-data')
     .row-fluid  
       .span4
-        label(for='firstname') Enter the patient's first name:
+        label(for='firstname') First Name:
         br
-        input#name.input(name='firstname', type='text', value='', size='30')
-        br
-      .span4
-        label(for='middlename') Enter the patient's middle name:
-        br
-        input#email.input(name='middlename', type='text', value='', size='30')
+        input#firstname.input(name='firstname', type='text', value='', size='30')
         br
       .span4
-        label(for='lastname') Enter the patient's last name:
+        label(for='middlename') Middle Name:
         br
-        input#email.input(name='lastname', type='text', value='', size='30')
+        input#middlename.input(name='middlename', type='text', value='', size='30')
+        br
+      .span4
+        label(for='lastname') Last Name:
+        br
+        input#lastname.input(name='lastname', type='text', value='', size='30')
         br
     .row-fluid  
       .span4
         form(action='action_page.php')
-          label(for='DOB') Enter the patient's Date of Birth:
+          label(for='DOB') Date of Birth:
           br
-          input(type='date', name='bday')
+          input#DOB.input(type='date', name='bday')
           br
       .span4
-        label(for='SSN') Enter the patient's social security number:
+        label(for='SSN') Social Security Number:
         br
         input#email.input(name='SSN', type='text', value='', size='30')
         br
       .span4
         form
           p 
-            | Please select the patient's gender: 
+            | Gender: 
             br
-            input(type='radio', name='gender', value='male', checked='')
+            input#male.input(type='radio', name='gender', value='male', checked='')
             |  Male
             br
-            input(type='radio', name='gender', value='female')
+            input#female.input(type='radio', name='gender', value='female')
             |  Female 
             br 
     .row-fluid     
       .span4
-        label(for='street') Enter the street address:
+        label(for='street') Street Address:
         br
-        input#name.input(name='street', type='text', value='', size='30')
+        input#street.input(name='street', type='text', value='', size='30')
         br
       .span4
         p
-          | Please select the patient's state/country of residence:
+          | State/country of Residence:
           br
           br
-          select(name='location')
+          select#location.select(name='location')
             optgroup(label='United States of America')
               option(label='Alabama', value='Alabama')
                 | Alabama
@@ -186,25 +186,57 @@ block content
                 | Kenya
           br      
       .span4
-        label(for='zipcode') Enter the patient's zip code:
+        label(for='zipcode') Zip Code:
         br
-        input#email.input(name='zipcode', type='text', value='', size='30')
+        input#zipcode.input(name='zipcode', type='text', value='', size='30')
         br
     .row-fluid  
       .span4
-        label(for='insurance') Enter the patient's insurance carrier:
+        label(for='primaryphone') Primary Phone:
         br
-        input#name.input(name='insurance', type='text', value='', size='30')
-        br
-      .span4
-        label(for='middlename') Enter the Member Number:
-        br
-        input#email.input(name='membernumber', type='text', value='', size='30')
+        input#primaryphone.input(name='primaryphone', type='text', value='', size='30')
         br
       .span4
-        label(for='lastname') Enter the primary's SSN:
+        label(for='email') Secondary Phone:
         br
-        input#email.input(name='primarySSN', type='text', value='', size='30')
+        input#secondphone.input(name='secondphone', type='text', value='', size='30')
         br
-    .row-fluid     
-      input#submit_button(type='submit', value='Submit Information')
+      .span4
+        label(for='email') Email Address:
+        br
+        input#email.input(name='email', type='text', value='', size='30')
+        br
+    hr 
+    h2 Enter the patient's insurance information below: 
+    .row-fluid  
+      .span4
+        label(for='insurance') Insurance Carrier:
+        br
+        input#insurance.input(name='insurance', type='text', value='', size='30')
+        br
+      .span4
+        label(for='membernumber') Member Number:
+        br
+        input#membernumber.input(name='membernumber', type='text', value='', size='30')
+        br
+      .span4
+        label(for='membernumber') Group ID:
+        br
+        input#membernumber.input(name='membernumber', type='text', value='', size='30')
+        br
+    .row-fluid        
+      .span4
+        label(for='primarySSN') Primary Insurance Holder's SSN:
+        br
+        input#primarySSN.input(name='primarySSN', type='text', value='', size='30')
+        br
+      .span4
+        form(action='action_page.php')
+          label(for='primaryDOB') Primary Insurance Holder's Date of Birth:
+          br
+          input#DOB.input(type='date', name='primaryDOB')
+          br   
+    hr
+    .row-fluid
+      center     
+        input#submit_button.btn-primary.btn-large(type='submit', value='Submit Information')
