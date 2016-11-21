@@ -49,6 +49,16 @@ app.get('/doctor_newPatient', function(req,res) { res.render("layouts/doctor_new
 app.get('/doctor_patientSearch', function(req,res) { res.render("layouts/doctor_patientSearch")});
 app.get('/doctor_scheduling', function(req,res) { res.render("layouts/doctor_scheduling")});
 
+//Render the Nurse specific pages
+app.get('/nurse_patientPortal', function(req,res) { res.render("layouts/nurse_patientPortal")});
+app.get('/nurse_newPatient', function(req,res) { res.render("layouts/nurse_newPatient")});
+app.get('/nurse_patientSearch', function(req,res) { res.render("layouts/nurse_patientSearch")});
+
+//Render the Staff specific pages
+app.get('/staff_patientPortal', function(req,res) { res.render("layouts/staff_patientPortal")});
+app.get('/staff_newPatient', function(req,res) { res.render("layouts/staff_newPatient")});
+app.get('/staff_patientSearch', function(req,res) { res.render("layouts/staff_patientSearch")});
+
 http.createServer(app).listen(app.get('port'), function(){
   console.log("Express server listening on port " + app.get('port'));
 });

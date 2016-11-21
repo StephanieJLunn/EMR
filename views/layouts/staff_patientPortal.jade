@@ -1,0 +1,42 @@
+extend staff_framework
+
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+ 
+
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 Patient Portal
+  .row-fluid
+    .span4
+      h2 New Patient Record
+      p
+        | Create a record for a new patient. 
+      p
+        a.btn.btn-primary.btn-large(href='/staff_newPatient') New Patient Record »
+    .span4
+      h2 Search for a Patient
+      p
+        | Locate the file for an existing patient to view or edit.
+      p
+        a.btn.btn-primary.btn-large(href='/staff_patientSearch') Search for a Patient »
+     

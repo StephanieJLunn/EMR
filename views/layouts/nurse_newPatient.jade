@@ -1,0 +1,210 @@
+extend nurse_framework
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+ 
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 New Patient
+  .row-fluid
+    h2 Please complete the information below:
+  form#contact_form(action='#', method='POST', enctype='multipart/form-data')
+    .row-fluid  
+      .span4
+        label(for='firstname') Enter the patient's first name:
+        br
+        input#name.input(name='firstname', type='text', value='', size='30')
+        br
+      .span4
+        label(for='middlename') Enter the patient's middle name:
+        br
+        input#email.input(name='middlename', type='text', value='', size='30')
+        br
+      .span4
+        label(for='lastname') Enter the patient's last name:
+        br
+        input#email.input(name='lastname', type='text', value='', size='30')
+        br
+    .row-fluid  
+      .span4
+        form(action='action_page.php')
+          label(for='DOB') Enter the patient's Date of Birth:
+          br
+          input(type='date', name='bday')
+          br
+      .span4
+        label(for='SSN') Enter the patient's social security number:
+        br
+        input#email.input(name='SSN', type='text', value='', size='30')
+        br
+      .span4
+        form
+          p 
+            | Please select the patient's gender: 
+            br
+            input(type='radio', name='gender', value='male', checked='')
+            |  Male
+            br
+            input(type='radio', name='gender', value='female')
+            |  Female 
+            br 
+    .row-fluid     
+      .span4
+        label(for='street') Enter the street address:
+        br
+        input#name.input(name='street', type='text', value='', size='30')
+        br
+      .span4
+        p
+          | Please select the patient's state/country of residence:
+          br
+          br
+          select(name='location')
+            optgroup(label='United States of America')
+              option(label='Alabama', value='Alabama')
+                | Alabama
+              option(label='Alaska', value='Alaska')
+                | Alaska
+              option(label='Arizona', value='Arizona')
+                | Arizona
+              option(label='Arkansas', value='Arkansas')
+                | Arkansas
+              option(label='California', value='California')
+                | California
+              option(label='Colorado', value='Colorado')
+                | Colorado
+              option(label='Connecticut', value='Connecticut')
+                | Connecticut
+              option(label='Delaware', value='Delaware')
+                | Delaware
+              option(label='Florida', value='Florida')
+                | Florida
+              option(label='Georgia', value='Georgia')
+                | Georgia
+              option(label='Hawaii', value='Hawaii')
+                | Hawaii
+              option(label='Idaho', value='Idaho')
+                | Idaho
+              option(label='Illinois', value='Illinois')
+                | Illinois
+              option(label='Indiana', value='Indiana')
+                | Indiana
+              option(label='Iowa', value='Iowa')
+                | Iowa
+              option(label='Kansas', value='Kansas')
+                | Kansas
+              option(label='Kentucky', value='Kentucky')
+                | Kentucky
+              option(label='Louisiana', value='Louisiana')
+                | Louisiana
+              option(label='Maine', value='Maine')
+                | Maine
+              option(label='Maryland', value='Maryland')
+                | Maryland
+              option(label='Massachusetts', value='Massachusetts')
+                | Massachusetts
+              option(label='Michigan', value='Michigan')
+                | Michigan
+              option(label='Minnesota', value='Minnesota')
+                | Minnesota
+              option(label='Mississippi', value='Mississippi')
+                | Mississippi
+              option(label='Missouri', value='Missouri')
+                | Missouri
+              option(label='Montana', value='Montana')
+                | Montana
+              option(label='Nebraska', value='Nebraska')
+                | Nebraska
+              option(label='Nevada', value='Nevada')
+                | Nevada
+              option(label='New Hampshire', value='New Hampshire')
+                | New Hampshire
+              option(label='New Jersey', value='New Jersey')
+                | New Jersey
+              option(label='New Mexico', value='New Mexico')
+                | New Mexico
+              option(label='New York', value='New York')
+                | New York
+              option(label='North Carolina', value='North Carolina')
+                | North Carolina
+              option(label='North Dakota', value='North Dakota')
+                | North Dakota
+              option(label='Ohio', value='Ohio')
+                | Ohio
+              ooption(label='Oklahoma', value='Oklahoma')
+                | Oklahoma
+              option(label='Oregon', value='Oregon')
+                | Oregon
+              option(label='Pennsylvania', value='Pennsylvania')
+                | Pennsylvania
+              option(label='Rhode Island', value='Rhode Island')
+                | Rhode Island
+              option(label='South Carolina', value='South Carolina')
+                | South Carolina
+              option(label='South Dakota', value='South Dakota')
+                | South Dakota
+              option(label='Tennessee', value='Tennessee')
+                | Tennessee
+              option(label='Texas', value='Texas')
+                | Texas
+              option(label='Utah', value='Utah')
+                | Utah
+              option(label='Vermont', value='Vermont')
+                | Vermont
+              option(label='Virginia', value='Virginia')
+                | Virginia
+              option(label='Washington', value='Washington')
+                | Washington
+              option(label='Washington D.C.', value='Washington D.C.')
+                | Washington D.C.
+              option(label='West Virginia', value='West Virginia')
+                | West Virginia
+              option(label='Wisconsin', value='Wisconsin')
+                | Wisconsin
+              option(label='Wyoming', value='Wyoming')
+                | Wyoming
+            optgroup(label='International')
+              option(label='Kenya', value='Kenya')
+                | Kenya
+          br      
+      .span4
+        label(for='zipcode') Enter the patient's zip code:
+        br
+        input#email.input(name='zipcode', type='text', value='', size='30')
+        br
+    .row-fluid  
+      .span4
+        label(for='insurance') Enter the patient's insurance carrier:
+        br
+        input#name.input(name='insurance', type='text', value='', size='30')
+        br
+      .span4
+        label(for='middlename') Enter the Member Number:
+        br
+        input#email.input(name='membernumber', type='text', value='', size='30')
+        br
+      .span4
+        label(for='lastname') Enter the primary's SSN:
+        br
+        input#email.input(name='primarySSN', type='text', value='', size='30')
+        br
+    .row-fluid     
+      input#submit_button(type='submit', value='Submit Information')
