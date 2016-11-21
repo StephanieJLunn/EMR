@@ -1,0 +1,35 @@
+extend staff_framework
+
+
+block sidebar
+  .well.sidebar-nav
+    ul.nav.nav-list
+      li.nav-header Most recently viewed
+      li.active
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName
+      li
+        a(href='#') PatientName  
+
+block content
+  .hero-unit
+    center
+      h1 Robert Loredo Health Services
+      h2 Billing
+  .row-fluid
+    .span4
+    .span4
+      h2 Search for a Patient
+      p
+        | Find an existing patient to view their pending charges and current total.
+      p
+        a.btn.btn-primary.btn-large(href='/staff_patientSearch') Search for a Patient »
