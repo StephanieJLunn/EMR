@@ -6171,3 +6171,42 @@ a.badge:focus {
   height: 100px;
   width: 100px;
 }
+
+fieldset.history { 
+  margin: 0; 
+  padding: 0; 
+  margin-bottom: 1.25em; 
+  padding: .125em; 
+} 
+
+fieldset.history legend { 
+  margin: 0; 
+  padding: 0; 
+  font-weight: bold; 
+  margin-left: 20px; 
+  font-size: 200%; 
+  color: #000080; 
+} 
+
+
+ul.checkbox  { 
+  margin: 0; 
+  padding: 0; 
+  margin-left: 20px; 
+  list-style: none; 
+} 
+
+ul.checkbox li input { 
+  margin-right: .25em; 
+} 
+
+ul.checkbox li {
+border: 1px transparent solid;
+float: left;
+min-width: 200px;
+}
+
+ul.checkbox li label { 
+  margin-left: ; 
+} 
+

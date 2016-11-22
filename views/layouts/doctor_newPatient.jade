@@ -281,7 +281,46 @@ block content
         input#bp.input(name='bp', type='text', value='', size='30')
         br       
     hr
-    h2 Medical History:    
+    h2 Medical History:  
+    .row-fluid
+      fieldset.history
+        center
+          legend Please check all that apply
+        ul.checkbox
+          li
+            input#cb1(type='checkbox', value='alcohol_abuse')
+            label(for='cb1') Alcohol Abuse
+          li
+            input#cb2(type='checkbox', value='amnesia')
+            label(for='cb2') Amnesia
+          li
+            input#cb3(type='checkbox', value='appendicitis')
+            label(for='cb3') Appendicitis
+          li
+            input#cb4(type='checkbox', value='birth_defects')
+            label(for='cb4') Birth Defects
+          li
+            input#cb5(type='checkbox', value='blood_clots')
+            label(for='cb5') Blood Clots
+          li
+            input#cb6(type='checkbox', value='Bronchitis')
+            label(for='cb6') Bronchitis
+          li
+            input#cb7(type='checkbox', value='Cancer')
+            label(for='cb7') Cancer 
+          li
+            input#cb8(type='checkbox', value='Car_Sickness')
+            label(for='cb8') Car or Air Sickness   
+          li
+            input#cb9(type='checkbox', value='Chest_Pain')
+            label(for='cb9') Chest Pain
+          li
+            input#cb10(type='checkbox', value='Chicken_Pox')
+            label(for='cb10') Chicken Pox 
+          li
+            input#cb11(type='checkbox', value='Chronic_Cough')
+            label(for='cb11') Chronic Cough  
+    hr  
     .row-fluid
       .span4
         form
