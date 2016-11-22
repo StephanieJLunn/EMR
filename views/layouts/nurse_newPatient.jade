@@ -210,21 +210,26 @@ block content
     h2 Enter the patient's insurance information below: 
     .row-fluid  
       .span4
-        label(for='insurance') Insurance Carrier:
+        label(for='insurance') Insurance Company Name:
         br
         input#insurance.input(name='insurance', type='text', value='', size='30')
         br
       .span4
-        label(for='membernumber') Member Number:
+        label(for='group_name') Group Name:
         br
-        input#membernumber.input(name='membernumber', type='text', value='', size='30')
+        input#membernumber.input(name='group_name', type='text', value='', size='30')
         br
       .span4
-        label(for='membernumber') Group ID:
+        label(for='group_number') Group Number:
         br
-        input#membernumber.input(name='membernumber', type='text', value='', size='30')
+        input#membernumber.input(name='group_number', type='text', value='', size='30')
         br
     .row-fluid        
+      .span4
+        label(for='insured_name') Name of Insured:
+        br
+        input#primarySSN.input(name='insured_name', type='text', value='', size='30')
+        br
       .span4
         label(for='primarySSN') Primary Insurance Holder's SSN:
         br
@@ -235,7 +240,7 @@ block content
           label(for='primaryDOB') Primary Insurance Holder's Date of Birth:
           br
           input#DOB.input(type='date', name='primaryDOB')
-          br   
+          br    
     hr
     h2 Enter the patient's vitals below:    
     .row-fluid 

@@ -210,21 +210,26 @@ block content
     h2 Enter the patient's insurance information below: 
     .row-fluid  
       .span4
-        label(for='insurance') Insurance Carrier:
+        label(for='insurance') Insurance Company Name:
         br
         input#insurance.input(name='insurance', type='text', value='', size='30')
         br
       .span4
-        label(for='membernumber') Member Number:
+        label(for='group_name') Group Name:
         br
-        input#membernumber.input(name='membernumber', type='text', value='', size='30')
+        input#membernumber.input(name='group_name', type='text', value='', size='30')
         br
       .span4
-        label(for='membernumber') Group ID:
+        label(for='group_number') Group Number:
         br
-        input#membernumber.input(name='membernumber', type='text', value='', size='30')
+        input#membernumber.input(name='group_number', type='text', value='', size='30')
         br
     .row-fluid        
+      .span4
+        label(for='insured_name') Name of Insured:
+        br
+        input#primarySSN.input(name='insured_name', type='text', value='', size='30')
+        br
       .span4
         label(for='primarySSN') Primary Insurance Holder's SSN:
         br
@@ -303,23 +308,50 @@ block content
             input#cb5(type='checkbox', value='blood_clots')
             label(for='cb5') Blood Clots
           li
-            input#cb6(type='checkbox', value='Bronchitis')
+            input#cb6(type='checkbox', value='bronchitis')
             label(for='cb6') Bronchitis
           li
-            input#cb7(type='checkbox', value='Cancer')
+            input#cb7(type='checkbox', value='cancer')
             label(for='cb7') Cancer 
           li
-            input#cb8(type='checkbox', value='Car_Sickness')
+            input#cb8(type='checkbox', value='car_sickness')
             label(for='cb8') Car or Air Sickness   
           li
-            input#cb9(type='checkbox', value='Chest_Pain')
+            input#cb9(type='checkbox', value='chest_pain')
             label(for='cb9') Chest Pain
           li
-            input#cb10(type='checkbox', value='Chicken_Pox')
+            input#cb10(type='checkbox', value='chicken_pox')
             label(for='cb10') Chicken Pox 
           li
-            input#cb11(type='checkbox', value='Chronic_Cough')
-            label(for='cb11') Chronic Cough  
+            input#cb11(type='checkbox', value='chronic_cough')
+            label(for='cb11') Chronic Cough 
+          li
+            input#cb12(type='checkbox', value='concussion')
+            label(for='cb12') Concussion
+          li
+            input#cb13(type='checkbox', value='convulsions')
+            label(for='cb13') Convulsions
+          li
+            input#cb14(type='checkbox', value='diabetes')
+            label(for='cb14') Diabetes
+          li
+            input#cb15(type='checkbox', value='diphtheria')
+            label(for='cb15') Diphtheria 
+          li
+            input#cb16(type='checkbox', value='depression')
+            label(for='cb16') Depression  
+          li
+            input#cb17(type='checkbox', value='drug_abuse')
+            label(for='cb17') Drug Abuse
+          li
+            input#cb18(type='checkbox', value='Chicken_Pox')
+            label(for='cb18') Chicken Pox 
+          li
+            input#cb19(type='checkbox', value='Chronic_Cough')
+            label(for='cb19') Chronic Cough  
+          li
+            input#cb20(type='checkbox', value='Chronic_Cough')
+            label(for='cb20') Chronic Cough     
     hr  
     .row-fluid
       .span4
