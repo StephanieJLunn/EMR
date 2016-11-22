@@ -499,7 +499,92 @@ block content
           br
           textarea#foodallergies.textarea(name='foodallergies', rows='10', cols='30') List any food and/or environmental allergies and describe the reactions.
           br     
-    hr       
+    hr
+    h2 Social History:
+    .row-fluid
+      .span4 
+        form
+          p 
+            | Cigarette Smoking: 
+            br
+            br
+            input#never_smoked.input(type='radio', name='cigarette', value='never_smoked', checked='')
+            |  Never Smoked
+            br
+            input#quit_smoking.input(type='radio', name='cigarette', value='quit_smoking')
+            |  Quit: Former Smoker 
+            br 
+            input#smokes_less_than.input(type='radio', name='cigarette', value='smokes_less_than')
+            |  Smokes Less than Daily
+            br 
+            input#smokes_daily.input(type='radio', name='cigarette', value='smokes_daily')
+            |  Smokes Daily
+            br 
+      .span4 
+        form
+          p 
+            | Illicit Drug Use: 
+            br
+            br
+            input#no_drugs.input(type='radio', name='drug_use', value='no_drugs', checked='')
+            |  None
+            br
+            input#drug_use.input(type='radio', name='drug_use', value='drug_use')
+            |  Drug Use
+            br 
+            input#iv_drug.input(type='radio', name='drug_use', value='iv_drug')
+            |  IV Drug Use
+            br  
+      .span4 
+        form
+          p 
+            | Sexual History: 
+            br
+            br
+            input#not_sexually.input(type='radio', name='sexual_history', value='not_sexually', checked='')
+            |  Not Sexually Active
+            br
+            input#active_one.input(type='radio', name='sexual_history', value='active_one')
+            |  Active with One Partner
+            br 
+            input#active_more_than.input(type='radio', name='sexual_history', value='active_more_than')
+            |  Sexually Active with More than One Partner
+            br 
+            input#active_same_gender.input(type='radio', name='sexual_history', value='active_same_gender')
+            |  Sexually Active with Same Gender Partner
+            br 
+    .row-fluid
+      .span4 
+        form
+          p 
+            | Alcohol Use: 
+            br
+            br
+            input#no_alcohol.input(type='radio', name='alcohol', value='no_alcohol', checked='')
+            |  None
+            br
+            input#alcohol_less_than.input(type='radio', name='alcohol', value='alcohol_less_than')
+            |  Less than 1 Drink a Day 
+            br 
+            input#alcohol_one_two.input(type='radio', name='alcohol', value='alcohol_one_two')
+            |  1-2 Drinks a Day
+            br 
+            input#alcohol_three_more.input(type='radio', name='alcohol', value='alcohol_three_more')
+            |  3 or more Drinks a Day
+            br 
+      .span4 
+        form
+          p 
+            | Safety: 
+            br
+            br
+            input#feel_safe.input(type='radio', name='safety', value='feel_safe', checked='')
+            |  I Feel Safe at Home
+            br
+            input#not_safe.input(type='radio', name='safety', value='not_safe')
+            |  I Do Not Feel Safe at Home
+            br                          
+    hr
     .row-fluid    
       center
         input#submit_button.btn-primary.btn-large(type='submit', value='Submit Information')
